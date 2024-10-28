@@ -1,31 +1,6 @@
 import Link from 'next/link';
 import React  from 'react';
 
-type ILink ={
-    tittle:string;
-    path:string;
-}
-const NavLink :ILink[] = [{
-    tittle:"Home",
-    path:"/",
-},
-  {
-    tittle:"About ",
-    path:"#about",
-},
-{
-    tittle:"Contact",
-    path:"#contact",
-},
-{
-    tittle:"Projects",
-    path:"#Projects",
-},
-{
-    tittle:"skills",
-    path:"#skills",
-}]
-
 const Navbar = () => {
   return (
     <nav>
