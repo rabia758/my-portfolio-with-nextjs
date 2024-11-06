@@ -1,15 +1,17 @@
 import React from 'react';
+import 'animate.css';
+
 
 const Project = () => {
   return (
     <>
   <section className="text-gray-600 body-font">
-    <div className="container px-5 py-20 mx-auto">
-      <div className="flex item-center justify-center "data-aos="zoom-in">
+    <div className="container px-5 py-20 mx-auto" id='Projects'>
+      <div className="flex item-center justify-center ''animate__slideInLeft ">
           <h1 className='text-3xl font-bold text-white underline hover:text-purple-600 items-center justify-center'>My Projects</h1>
         </div>
       </div>
-      <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10  -mt-4 ease-in-out duration-300" data-aos="zoom-in">
+      <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10  -mt-4 ease-in-out duration-300''animate__animated animate__slideInLeft">
         <div className="p-4 md:w-1/3 sm:mb-0 mb-6 ease-in-out duration-300 hover:bg-gray-800 cursor-pointer">
           <div className="rounded-lg h-64 overflow-hidden">
             <img
