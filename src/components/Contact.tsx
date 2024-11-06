@@ -7,23 +7,7 @@ const Contact = () => {
     name: '',
     email: '',
     message: '',
-  });
-
-  // Handle input changes
-  const handleChange = (e: any) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
-  };
-
-  // Handle form submission (you can connect this to an email service)
-  const handleSubmit = (e: any) => {
-    e.preventDefault();
-    // You can implement form submission logic here
-    console.log('Form submitted', formData);
-  };
+  })
 
   return (
       <section className="text-white body-font relative" id='contact'>
@@ -38,7 +22,7 @@ const Contact = () => {
           </div>
 
           <div className="lg:w-1/2 md:w-1/3 mx-auto animate__animated animate__fadeLeft">
-            <form onSubmit={handleSubmit} >
+            <form  >
               <div className="flex flex-wrap ">
 
                 {/* Name Input*/}
@@ -53,7 +37,6 @@ const Contact = () => {
                       name="name"
                       className=" w-full bg-opacity-50 rounded border border-white bg-white text-white bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 focus:border-purple-100 focus:bg-purple-100 focus:ring-2 focus:ring-purple-200 text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                       value={formData.name}
-                      onChange={handleChange}
                       required
                     />
                   </div>
@@ -70,7 +53,6 @@ const Contact = () => {
                       name="email"
                       className="w-full bg-opacity-50 rounded border border-white bg-white  bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 focus:border-purple-100 focus:bg-purple-100 focus:ring-2 focus:ring-purple-200 text-base outline-none text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                       value={formData.email}
-                      onChange={handleChange}
                       required
                     />
                   </div>
@@ -88,7 +70,6 @@ const Contact = () => {
                       className="w-full bg-opacity-50 rounded border border-white bg-white  bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 focus:border-purple-100 focus:bg-purple-100 focus:ring-2 focus:ring-purple-200 text-base outline-none text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                       defaultValue={""}
                       value={formData.message}
-                      onChange={handleChange}
                       required
                     />
                   </div>
