@@ -1,14 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import 'animate.css';
 
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
-  })
-
   return (
       <section className="text-white body-font relative" id='contact'>
         <div className="container px-5 py-2 mx-auto" >
@@ -36,7 +30,6 @@ const Contact = () => {
                       id="name"
                       name="name"
                       className=" w-full bg-opacity-50 rounded border border-white bg-white text-white bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 focus:border-purple-100 focus:bg-purple-100 focus:ring-2 focus:ring-purple-200 text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                      value={formData.name}
                       required
                     />
                   </div>
@@ -52,7 +45,6 @@ const Contact = () => {
                       id="email"
                       name="email"
                       className="w-full bg-opacity-50 rounded border border-white bg-white  bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 focus:border-purple-100 focus:bg-purple-100 focus:ring-2 focus:ring-purple-200 text-base outline-none text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                      value={formData.email}
                       required
                     />
                   </div>
@@ -67,9 +59,7 @@ const Contact = () => {
                     <textarea
                       id="message"
                       name="message"
-                      className="w-full bg-opacity-50 rounded border border-white bg-white  bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 focus:border-purple-100 focus:bg-purple-100 focus:ring-2 focus:ring-purple-200 text-base outline-none text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                      defaultValue={""}
-                      value={formData.message}
+                      className="w-full bg-opacity-50 rounded border border-white bg-white  bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 focus:border-purple-100 focus:bg-purple-100 focus:ring-2 focus:ring-purple-200 text-base outline-none text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-ou"
                       required
                     />
                   </div>
